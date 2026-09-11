@@ -45,7 +45,7 @@ pd.set_option("display.float_format", lambda x: f"{x:,.4f}")
 # loaded here from a CSV mirror). Includes one categorical column
 # (ocean_proximity) and a handful of missing values in total_bedrooms,
 # which is realistic and gives us a small cleaning step to do.
-CSV_PATH = "/home/claude/housing.csv"
+CSV_PATH = "housing.csv"
 df = pd.read_csv(CSV_PATH)
 df.rename(columns={"median_house_value": "Price"}, inplace=True)
 
