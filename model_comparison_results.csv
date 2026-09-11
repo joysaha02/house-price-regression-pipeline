@@ -1,0 +1,9 @@
+,RMSE,R2,Notes
+1. Simple Linear Regression,84976.53325615863,0.47196228574894983,feature = median_income
+2. Multiple Linear Regression,69297.71669113041,0.6488402154431983,all features
+3. Polynomial Regression (deg=2),84652.78721425789,0.4759780879494322,"feature = median_income, degree=2"
+4. Ridge Regression,69298.76075965742,0.6488296339216575,best alpha=10.0
+5. Lasso Regression,69297.73746170623,0.6488400049372142,"best alpha=1.0, dropped features: none"
+6. Elastic Net,69300.22422234817,0.6488148016173049,"best params={'alpha': 0.01, 'l1_ratio': 0.9}"
+7. Logistic Regression (classification),,,Accuracy=0.8424
+8. Random Forest Regression,48757.915604681555,0.8261570087220649,n_estimators=200
